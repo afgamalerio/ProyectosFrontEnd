@@ -1,0 +1,42 @@
+body {
+    font-family: 'Mukta', sans-serif;
+}
+
+main {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+.principalTitle {
+    color: teal;
+
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.homeButton {
+    background-color: teal ;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 30px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}

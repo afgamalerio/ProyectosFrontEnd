@@ -1,32 +1,86 @@
 body {
     font-family: 'Montserrat', sans-serif;
-}
-
-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.nav-menu {
-    list-style: none;
-}
-
-.nav-menu-link {
-    text-decoration: none;
+    margin: 0;
 }
 
 .logo-image {
-    object-fit: contain;    
+    object-fit: cover;
+    width: 60px;
+    margin-bottom: 10px;
 }
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.menu .mid {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menu .mid ul li {
+    display: inline-block;
+    position: relative;
+    transition: 1s;
+}
+
+.menu .mid ul li a {
+    font-size: 15px;
+    display: block;
+    color: black;
+    border-bottom: 2px solid transparent;
+    padding: 10px;
+    background-color: white;
+}
+
+.menu .mid ul li a:hover {
+    border-bottom: 2px solid red;
+}
+
+.menu .mid ul li ul {
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    width: 130px;
+    display: none;
+}
+
+.menu .mid ul li ul li {
+    display: block;
+    margin-bottom: 2px;
+}
+
+.menu .mid ul li:hover ul {
+    display: block;
+    margin-left: -40px;
+}
+
+.menu .mid ul li:hover {
+    z-index: 999;
+} 
 
 .header-div {
     position: relative;
     background: 
-      linear-gradient(
-        rgba(0, 0, 0, 0.2),
-        rgba(0, 0, 0, 0.8)
-      ), url('./img/lemon-pie.png');
+    linear-gradient(
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.8)
+    ), url('./img/lemon-pie.png');
     background-size: cover;
     height: 400px;
     margin: 0;
