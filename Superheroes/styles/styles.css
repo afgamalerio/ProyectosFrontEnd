@@ -1,51 +1,29 @@
+@import url("./header.css");
+@import url("./batman.css");
+@import url("./ww.css");
+@import url("./superman.css");
+@import url("./harleyQuinn.css");
+@import url("./ingresar.css");
+@import url("./contacto.css");
+@import url("./registro.css");
+@import url("./agregatusuper.css");
+
+
 body {
     margin: inherit;
     padding: inherit;
     font-family: 'Roboto', sans-serif;
 }
 
-.descuento {
-    background: #1CD1B0;
-    height: 20px;
-}
-
-p {
-    margin: inherit;
-}
-
-section {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
-
-header {
-    background: #00669F;
-    position: sticky;
-    top: 0;
-    height: 70px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    z-index: 999;
-}
-
-h1 {
-    margin: 0;
-    color: white;
-    font-weight: inherit;
-}
-
 main {
     background: #E5E5E5;
+    display: flex;
 }
 
 .botonsuma{
     position: fixed;
     right: 50px;
-    bottom: 30px;
+    bottom: 100px;
     width: 50px;
     height: 50px;
     display: flex;
@@ -58,12 +36,57 @@ main {
     z-index: 999;
 }
 
+.botonsuma:hover{
+    background-color: #023655;
+}
+
+.superhero-card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 80%;
+    padding: 10%;
+}
+
 .fa-heart {
     color: red;
     position: absolute;
     font-size: 20px;
     top: 15px;
     left: 15px;
+}
+
+.fa-heart:hover {
+    animation: heartbeat 1s infinite;
+}
+
+@keyframes heartbeat
+{
+  0%
+  {
+    transform: scale( 1 );
+  }
+  20%
+  {
+    transform: scale( 1.25 );
+  }
+  40%
+  {
+    transform: scale( 1 );
+  }
+  60%
+  {
+    transform: scale( 1.25 );
+  }
+  80%
+  {
+    transform: scale( 1 );
+  }
+  100%
+  {
+    transform: scale( 1.25 );
+  }
 }
 
 .card-title {
@@ -81,6 +104,10 @@ main {
     flex-direction: column;
     align-items: center;
     border-radius: 25px 25px 0 0;
+}
+
+.superhero-card:hover {
+    transform: translate(0, -5px);
 }
 
 .batman-card-image {
@@ -155,12 +182,16 @@ main {
     padding: 20px;
 }
 
-footer {
-    background: #00669F;
-    height: 70px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+.card-button {
+    padding: 15px 30px;
+    background-color: #00669F;
     color: white;
+    border-radius: 15px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+
+.card-button:hover{
+    background-color: #023655;
 }

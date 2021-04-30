@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/registro.css">
+    <title>Super Heros</title>
+</head>
+<body>
+    <div class="descuento">
+        <p>Descuentos 20%</p>
+    </div>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="./img/logo.png" alt="Logo de la tienda" class="logo-image">
+            <h1 class="logo-title">La tiendita de los supers</h1>
+        </a>
+    </header>
+    <div class="menuDiv">
+        <ul class="menu">
+            <li><a href="./contacto.html" class="menuLink">Contacto</a></li>
+            <li><a href="./registro.html" class="menuLink">Registrarme</a></li>
+            <li><a href="./ingresar.html" class="menuLink">Ingresar</a></li>
+        </ul>
+    </div>
+    <main>
+        <div class="form-container">
+            <h2>Registro</h2>
+            <form action="./registro.html" method="POST" class="form">
+                <input type="email" name="email" id="email" placeholder="Mail" required>
+                <input type="password" name="password" id="password" placeholder="Contraseña" required>
+                <select name="country" value="País">
+                    <option value="Pais">País</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Brasil">Brasil</option>
+                    <option value="Paraguay">Paraguay</option>
+                    <option value="Uruguay">Uruguay</option>
+                    <option value="Chile">Chile</option>
+                </select>
+                <a class=refresh href="Register.html">Resetear</a>
+                <a class=entrar href="index.html">Entrar</a>
+            </form>
+            <p>¿Ya tenés una cuenta? <a href="./ingresar.html">Ingresá</a></p>
+        </div>
+    </main>
+    <footer>
+        <p>Made with love and lots of mate by Ani</p>
+    </footer>
+</body>
+</html>

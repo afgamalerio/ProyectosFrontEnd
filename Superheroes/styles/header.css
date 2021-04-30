@@ -1,0 +1,64 @@
+
+.descuento {
+    padding-left: 20px;
+    background: #1CD1B0;
+    height: 20px;
+}
+
+p {
+    margin: inherit;
+}
+
+header {
+    background: #00669F;
+    position: sticky;
+    top: 0;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 999;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    height: 90%;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo-image {
+    height: 80%;
+    margin: 20px;
+}
+
+.logo-title {
+    margin: 0;
+    color: white;
+    font-weight: inherit;
+}
+
+.menuDiv {
+    background-color: #001D2D;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: auto;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.menuLink {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.menuLink:hover {
+    font-weight: bold;
+}
