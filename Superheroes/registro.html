@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/registro.css">
-    <title>Super Heros</title>
+    <title>Registro</title>
 </head>
 <body>
     <div class="descuento">
@@ -30,8 +30,9 @@
     <main>
         <div class="form-container">
             <h2>Registro</h2>
-            <form action="./registro.html" method="POST" class="form">
-                <input type="email" name="email" id="email" placeholder="Mail" required>
+            <form action="registro.html" method="POST" class="form">
+                <input type="name" name="name" id="name" placeholder="Nombre y apellido" required>
+                <input type="email" name="email" id="email" placeholder="Correo electrónico" required>
                 <input type="password" name="password" id="password" placeholder="Contraseña" required>
                 <select name="country" value="País">
                     <option value="Pais">País</option>
@@ -41,10 +42,12 @@
                     <option value="Uruguay">Uruguay</option>
                     <option value="Chile">Chile</option>
                 </select>
-                <a class=refresh href="Register.html">Resetear</a>
-                <a class=entrar href="index.html">Entrar</a>
+                <div>
+                    <a class= "formbtn refresh" href="registro.html">Resetear</a>
+                    <a class= "formbtn enter" href="index.html">Entrar</a>
+                </div>
             </form>
-            <p>¿Ya tenés una cuenta? <a href="./ingresar.html">Ingresá</a></p>
+            <p class="bottom-text">¿Ya tenés una cuenta? <a href="ingresar.html">Ingresá</a></p>
         </div>
     </main>
     <footer>

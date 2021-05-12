@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
 
 
 :root {
     --bg-color: #E5E5E5;
-    --primary-yellow: #F0A83E;
-    --seconary-yellow: #E4B455;
+    --primary-color: #c4fb6d;
+    --secondary-color: #c4fb6d29;
     --white: #FFFFFF;
     --black: #222222; 
   }
@@ -37,6 +37,33 @@ main {
     z-index: -10;
 }
 
+.social {
+	position: fixed; 
+	left: 20px; 
+	top: calc(50% - 90px);
+	z-index: 2000; 
+}
+.social ul {
+	list-style: none;
+}
+
+.social ul li a {
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none; 
+}
+
+.social ul li a:hover {
+  padding-left: 25px;
+  padding-right: 25px;
+  transform: scale(1.5);
+  transition: all 1.5s;
+}
+
+.fas, .fab {
+    color:var(--primary-color);
+}
+
 .mainContainer {
     height: 100vh;
     display: flex;
@@ -48,7 +75,7 @@ main {
 
 .presentationDiv {
     position: relative;
-    height: 40vh;
+    height: 50vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -63,15 +90,15 @@ main {
 
 .quote {
     overflow: hidden;
-    color: #c4fb6d;
-    border-right: .15em solid #c4fb6d;
+    color: white;
+    border-right: .15em solid white;
     white-space: nowrap;
     margin: 0 auto;
-    font-size: 3rem;
+    font-size: 1.5rem;
     letter-spacing: .15em;
     font-family: 'Roboto Mono', monospace;
     animation: 
-      typing 3.5s steps(40, end),
+      typing 3s steps(20, end),
       blink-caret .75s step-end infinite;
 }
 
@@ -82,8 +109,27 @@ main {
 
   @keyframes blink-caret {
     from, to { border-color: transparent }
-    50% { border-color: #c4fb6d; }
+    50% { border-color: white; }
   }
+
+h1 {
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    font-size: 2rem;
+}
+
+p {
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    width: 60%;
+}
+
+h3 {
+    color: var(--primary-color);
+    letter-spacing: 0.1rem;
+}
 
 .menu {
     display: flex;
@@ -104,10 +150,12 @@ main {
     letter-spacing: 1px;
     text-transform: uppercase;
     padding: 15px 25px;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .homeButton:hover {
-    color: #c4fb6d;
-    border: 1px solid #c4fb6d;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
     transition: all 500ms linear;
+    background: var(--secondary-color);
 }

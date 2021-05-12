@@ -1,12 +1,5 @@
 @import url("./header.css");
-@import url("./batman.css");
-@import url("./ww.css");
-@import url("./superman.css");
-@import url("./harleyQuinn.css");
-@import url("./ingresar.css");
-@import url("./contacto.css");
-@import url("./registro.css");
-@import url("./agregatusuper.css");
+@import url("footer.css");
 
 
 body {
@@ -182,15 +175,34 @@ main {
     padding: 20px;
 }
 
+.hquinn-card-image {
+    background-image: url(../img/bg-hquinn.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    object-fit: cover;
+    border-radius: 25px 25px 0 0;
+    position: relative;
+}
+
+.hquinn-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
 .card-button {
-    padding: 15px 30px;
+    padding: 10px 25px;
     background-color: #00669F;
     color: white;
-    border-radius: 15px;
     text-decoration: none;
     margin-top: 20px;
 }
-
 
 .card-button:hover{
     background-color: #023655;

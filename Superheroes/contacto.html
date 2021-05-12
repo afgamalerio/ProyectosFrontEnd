@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/styles.css">
-    <title>Super Heros</title>
+    <link rel="stylesheet" href="./styles/contacto.css">
+    <title>Contacto</title>
 </head>
 <body>
     <div class="descuento">
@@ -28,6 +28,18 @@
         </ul>
     </div>
     <main>
+        <div class="form-container">
+            <h2>Contacto</h2>
+            <form action="registro.html" method="POST" class="form">
+                <input type="name" name="name" id="name" placeholder="Nombre y apellido" required>
+                <input type="email" name="email" id="email" placeholder="Correo electrónico" required>
+                <textarea name="message" id="message" rows="10" placeholder="Hola! necesito saber más sobre el super..."></textarea>
+                <div>
+                    <a class= "formbtn refresh" href="registro.html">Resetear</a>
+                    <a class= "formbtn enter" href="index.html">Entrar</a>
+                </div>
+            </form>
+        </div>
     </main>
     <footer>
         <p>Made with love and lots of mate by Ani</p>
